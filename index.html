@@ -11,6 +11,17 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
 <!-- partial -->
   <script  src="./schedule.js"></script>
-  <script  src="./userinput.js"></script>
+
+<script>
+function validateForm() {
+  let x = document.forms["schedule"]["t1"].value;
+  
+}
+</script>
+<form name="schedule" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="t1">
+  submit: <input type="submit" value="submit">
+</form>
+
 </body>
 </html>
