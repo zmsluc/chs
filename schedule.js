@@ -8,35 +8,35 @@ function showTime(){
 //section below's abt period timing
   
     if (realM > 475 & realM < 520){
-      var timeLeft = (520 - realM);
+      var mLeft = (520 - realM);
       var period = "Period 1";
     }//period 1^
     if (realM > 524 & realM < 567){
-      var timeLeft = (567 - realM);
+      var mLeft = (567 - realM);
       var period = "Period 2";
     }//period 2^
     if (realM > 571 & realM < 614){
-      var timeLeft = (614 - realM)
+      var mLeft = (614 - realM)
       var period = "Period 3";
     }//period 3^
     if (realM > 618 & realM < 661){
-      var timeLeft = (661 - realM)
+      var mLeft = (661 - realM)
       var period = "Period 4";
     }//period 4^
     if (realM > 665 & realM < 710){
-      var timeLeft = (710 - realM)
+      var mLeft = (710 - realM)
       var period = "Period 5";
     }//period 5^
     if (realM > 714 & realM < 759){
-      var timeLeft = (759 - realM)
+      var mLeft = (759 - realM)
       var period = "Period 6"
     }//period 6^
     if (realM > 763 & realM < 808){
-      var timeLeft = (808 - realM)
+      var mLeft = (808 - realM)
       var period = "Period 7"
     }//period 7^
     if (realM > 812 & realM < 855){
-      var timeLeft = (855 - realM)
+      var mLeft = (855 - realM)
       var period = "Period 8"
     }//period 8^
   
@@ -46,7 +46,7 @@ function showTime(){
 //section below is just for displaying it properly
   
     if (time === undefined){
-       var time = period + " ends in " + timeLeft + " minutes.";// this is what it will show for the display.
+       var time = period + " ends in " + mLeft + " minutes.";// this is what it will show for the display.
     }
     document.getElementById("TimeLeft").innerText = time; document.getElementById("TimeLeft").textContent = time;
     setTimeout(showTime, 1000);
