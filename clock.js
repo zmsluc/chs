@@ -5,6 +5,10 @@ function showTime(){
     var s = date.getSeconds();
     var realM = (h*60 + m);// this combines hours and minutes, so 7:55 becomes 475, 8:40 becomes 520, etc.
     var sLeft = (60 - s);
+    
+    if (sLeft < 10){
+      var sLeft = ("0" + sLeft)
+    }
   
 //section below's abt period timing
   
